@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.holaverse.queenslots.casino.free"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('key.jks')
+            keyAlias 'key'
+            keyPassword '123456'
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', 'ads'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile(name: 'UPAdsSdk_3.0.06_domestic', ext: 'aar')
+    compile(name: 'android-gif-drawable', ext: 'aar') //for toutiao
+
+    compile(name: 'youlan_ads', ext: 'aar')
+    compile(name: 'inmobi_ads', ext: 'aar')
+    compile(name: 'mobvista_ads', ext: 'aar')
+    compile(name: 'oneway_ads', ext: 'aar')
+    compile(name: 'playable_ads', ext: 'aar')
+    compile(name: 'vungle_ads', ext: 'aar')
+    compile(name: 'gdt_ads', ext: 'aar')
+    compile(name: 'toutiao_ads', ext: 'aar')
+
+
+}
+
