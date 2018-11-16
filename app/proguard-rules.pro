@@ -260,13 +260,9 @@
 # domob end
 
 # gdt
--keep class com.qq.e.** {
-    public protected *;
-}
--keep class android.support.v4.app.NotificationCompat**{
-    public *;
-}
--keep class android.support.v4.**{ *;}
+-keep class com.qq.e.** {*;}
+-keep class android.support.v4.** {public *;}
+-keep class android.support.v7.** {public *;}
 # gdt end
 
 # youappi
@@ -336,3 +332,8 @@ public static final ** CREATOR;
     public static final ** CREATOR;
 }
 # mobpower end
+
+# display.io
+-keep class io.display.sdk.Controller.** { *;}
+-dontwarn io.display.sdk.Controller.**
+# display.io end
