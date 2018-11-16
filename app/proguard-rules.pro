@@ -65,6 +65,8 @@
 -keep class com.google.android.gms.common.** {*;}
 -dontwarn com.google.android.gms.**
 -dontwarn com.google.protobuf.**
+-keep class com.google.ads.mediation.** {*;}
+-dontwarn com.google.ads.mediation.**
 # google end
 
 # adcolony
