@@ -47,10 +47,9 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
 
     compile(name: 'UPAdsSdk_3.0.06_domestic', ext: 'aar')
+    compile(name: 'gson-2.7', ext: 'jar') // for vungle
     compile(name: 'android-gif-drawable', ext: 'aar') //for toutiao
 
-    compile(name: 'youlan_ads', ext: 'aar')
-    compile(name: 'inmobi_ads', ext: 'aar')
     compile(name: 'mobvista_ads', ext: 'aar')
     compile(name: 'oneway_ads', ext: 'aar')
     compile(name: 'playable_ads', ext: 'aar')
