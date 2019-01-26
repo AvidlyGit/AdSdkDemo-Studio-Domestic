@@ -100,20 +100,17 @@
 -keeppackagenames 'retrofit2'
 # vungle end
 
-# mobvista
+# mintegral
 -keepattributes Signature
 -keepattributes *Annotation*
 -keep class com.mintegral.** {*;}
 -keep interface com.mintegral.** {*;}
--keep class com.mobvista.** {*; }
--keep interface com.mobvista.** {*; }
 -keep class android.support.v4.** { *; }
--dontwarn com.mobvista.**
 -dontwarn com.mintegral.**
 -keep class **.R$* { public static final int mintegral*; }
 -keep class com.alphab.** {*; }
 -keep interface com.alphab.** {*; }
-# mobvista end
+# mintegral end
 
 # unity
 -keepattributes SourceFile,LineNumberTable

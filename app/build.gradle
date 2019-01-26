@@ -50,7 +50,7 @@ dependencies {
     compile(name: 'gson-2.7', ext: 'jar') // for vungle
     compile(name: 'android-gif-drawable', ext: 'aar') //for toutiao
 
-    compile(name: 'mobvista_ads', ext: 'aar')
+    compile(name: 'mintegral_ads', ext: 'aar')
     compile(name: 'oneway_ads', ext: 'aar')
     compile(name: 'playable_ads', ext: 'aar')
     compile(name: 'vungle_ads', ext: 'aar')
