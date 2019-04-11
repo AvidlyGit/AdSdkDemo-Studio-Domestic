@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "adam.lean.inland"
         minSdkVersion 15
@@ -42,12 +42,14 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support:multidex:1.0.1'
 
-    compile(name: 'UPAdsSdk_3.0.06_domestic', ext: 'aar')
+    compile(name: 'UPAdsSdk_3.0.07_domestic', ext: 'aar')
     compile(name: 'gson-2.7', ext: 'jar') // for vungle
+    compile(name: 'glide-3.7.0', ext: 'jar')
     compile(name: 'android-gif-drawable', ext: 'aar') //for toutiao
 
     compile(name: 'mintegral_ads', ext: 'aar')
